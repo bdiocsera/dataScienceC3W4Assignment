@@ -94,4 +94,4 @@ merged_dataset$activityfactor <- NULL # activityfactor not needed anymore
 ###############################################
 merged_dataset_summary <- merged_dataset %>% group_by(subjectid,activityname,data.origin) %>% summarise_each(funs(mean))
 colnames(merged_dataset_summary) <- c("subjectid","activityname","data.origin",paste("Average.", colnames(merged_dataset_summary[4:69]),sep=""))
-write.table(merged_dataset_summary,file="UCIHARData_summary_tidy.txt", row.names = FALSE, col.names = FALSE)
+write.table(merged_dataset_summary,file="UCIHARData_summary_tidy.txt", row.names = FALSE)

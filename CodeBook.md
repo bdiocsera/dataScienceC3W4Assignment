@@ -53,12 +53,14 @@ For convinience, the original README file was recopied with this under the file 
 
 8. The "final tidy dataset" was created by
 
-  a. Grouped the"merged dataset" by subject, activity name and origin of data and averaging each column.
+  a. Grouped the "merged dataset" by subject, activity name and origin of data and averaging each column.
   
   b. Renaming variable names by appending a prefix "Average." to previous variable names.
   
-  c. A file _UCIHARData\_summary\_tidy.txt_ without colun and row headers.
+  c. A file _UCIHARData\_summary\_tidy.txt_ without row headers is created. It contains a header and all columns separated by a white space.
   
+The dataset is tidy since it had only one variable per column and one observation per row.
+
 The "final tidy dataset" has the following variable names:
 
  [1] "subjectid"                           
